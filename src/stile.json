@@ -194,6 +194,25 @@
     ]
   },
   {
+    "key": "coder",
+    "name": "Coder",
+    "emoji": "💻",
+    "short": "Die Nachricht als Programmcode mit Commit und Bugs",
+    "description": "Verpacke die Nachricht als augenzwinkernden Programmcode (JavaScript-artig). Aufbau: Kopf aus Kommentaren (// Commit: <Version> \"<Titel>\", // Autor: Ich, // Status: <z. B. Deployed, Dringend, In Review>), dann eine kleine Funktion mit sprechenden Variablen, if/else, Rückgabewerten oder throw new Error(...), die den Inhalt der Nachricht als Programmlogik darstellt. Danach ein Block \"// Ausführung:\", in dem die eigentliche Nachricht vollständig und gut lesbar als Kommentarzeilen steht, damit sie auch ohne Programmierkenntnisse ankommt. Zum Schluss ein, zwei Nerd-Pointen als Kommentar (Cache, Bug, Merge, Timeout, 404, Herz.status) und eine Emoji-Zeile wie 💻⌨️🤓🚀🐛. Anrede in der Ausführung an einen Mann z. B. \"Mein liebster ...\", \"Lead-Entwickler meines Herzens\"; an eine Frau z. B. \"Meine liebste ...\", \"Chefarchitektin meines Herzens\". Vorrang vor den Grundregeln: Die Länge darf das Dreifache überschreiten, höchstens etwa 25 Zeilen; Zeilenumbrüche und Einrückung gehören dazu. Keine Markdown-Codeblöcke (keine ```), nur reiner Text.",
+    "examples": [
+      {
+        "to": "mann",
+        "original": "Kannst du auf dem Heimweg bitte noch Milch und Eier mitbringen? Bis später",
+        "result": "// Commit: 2.3.1 \"Hotfix Einkaufsliste\"\n// Autor: Ich\n// Status: Dringend\n\nfunction heimweg(du) {\n    let kuehlschrank = [\"Senf\", \"Licht\"];\n\n    // Sanity-Check: Ist Frühstück möglich?\n    if (!kuehlschrank.includes(\"Milch\") || !kuehlschrank.includes(\"Eier\")) {\n        du.einkaufen([\"Milch\", \"Eier\"]);\n    }\n    return \"Danke, mein Held!\";\n}\n\n// Ausführung:\n// Kannst du auf dem Heimweg bitte noch Milch und Eier mitbringen?\n// Bis später.\n\n// TODO: Frühstück darf morgen nicht abstürzen.\n\n💻🥛🥚🐛"
+      },
+      {
+        "to": "frau",
+        "original": "Schatz, ich bin in 20 Minuten zuhause. Soll ich noch Brot mitbringen?",
+        "result": "// Commit: 0.9.2 \"ETA-Update\"\n// Autor: Ich\n// Status: Unterwegs\n\nconst ankunft = jetzt() + 20 * MINUTEN;\n\nasync function brotFrage(schatz) {\n    const antwort = await schatz.fragen(\"Brot mitbringen?\");\n    if (antwort === true) {\n        rucksack.push(\"Brot\");\n    }\n}\n\n// Ausführung:\n// Meine liebste Chefarchitektin,\n// ich bin in 20 Minuten zuhause.\n// Soll ich noch Brot mitbringen?\n\n// Warte auf Response ... bitte kein Timeout.\n\n💻🍞🚀"
+      }
+    ]
+  },
+  {
     "key": "emoji",
     "name": "Nur Emojis",
     "emoji": "🤪",

@@ -4,7 +4,7 @@
 
 Schreibt eine Nachricht oder Idee maßlos übertrieben in einem Stil um, fertig zum Einfügen in Telegram, WhatsApp, Signal oder E-Mail. Omarchy-App (Qt Quick), folgt dem Theme, nutzt die Claude-API.
 
-Stile: Wikinger, Strenger Erzieher, Indischer Guru, Sportreporter, Barocker Hofdichter, Lothar Matthäus, James Bond, Machiavelli, Klaus Kinski, Sherlock Holmes, Nur Emojis.
+Stile: Wikinger, Strenger Erzieher, Indischer Guru, Sportreporter, Barocker Hofdichter, Lothar Matthäus, James Bond, Machiavelli, Klaus Kinski, Sherlock Holmes, Coder, Nur Emojis.
 
 ## Tastenkürzel
 
@@ -90,7 +90,7 @@ Entfernen: `pkexec pacman -R stilwandler`.
 
 ## English
 
-Stilwandler rewrites a message or idea in an absurdly exaggerated style (Viking saga, strict drill instructor, wise guru, sports commentator, baroque court poet, Lothar Matthäus, James Bond, Machiavelli, Klaus Kinski, Sherlock Holmes, emojis only), ready to paste into any messenger or e-mail. Pick whether it goes to a woman, a man or anyone, and the forms of address follow. The styles are written for German messages; the model answers in the language you write in. The interface is German by default and English when Omarchy's language is set to English.
+Stilwandler rewrites a message or idea in an absurdly exaggerated style (Viking saga, strict drill instructor, wise guru, sports commentator, baroque court poet, Lothar Matthäus, James Bond, Machiavelli, Klaus Kinski, Sherlock Holmes, coder, emojis only), ready to paste into any messenger or e-mail. Pick whether it goes to a woman, a man or anyone, and the forms of address follow. The styles are written for German messages; the model answers in the language you write in. The interface is German by default and English when Omarchy's language is set to English.
 
 Install on Omarchy: `git clone https://github.com/bernhard2804/stilwandler.git && cd stilwandler && bin/install`. Store your own Anthropic API key with `secret-tool store --label='Stilwandler' service stilwandler key anthropic` (or set `ANTHROPIC_API_KEY`). Your text is sent to Anthropic; nothing is stored except your last choices.
 
