@@ -1,5 +1,5 @@
 pkgname=stilwandler
-pkgver=0.2.0
+pkgver=0.3.0
 pkgrel=1
 pkgdesc='Rewrites a message in an absurdly exaggerated style, ready to paste'
 arch=('x86_64' 'aarch64')

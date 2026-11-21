@@ -29,7 +29,7 @@ private slots:
         QStringList skipped;
         const auto styles = Styles::parse(file.readAll(), &error, &skipped);
         QVERIFY2(skipped.isEmpty(), qPrintable(skipped.join(",")));
-        QCOMPARE(styles.size(), 6);
+        QCOMPARE(styles.size(), 11);
         for (const Style &s : styles)
             QVERIFY2(!s.examples.isEmpty(), qPrintable(s.key));
     }
@@ -165,7 +165,7 @@ private slots:
         QTemporaryDir dir;
         write(dir.path() + "/stile.json", "nope");
         Backend backend(dir.path() + "/stile.json", "test-key");
-        QCOMPARE(backend.styles().size(), 6);
+        QCOMPARE(backend.styles().size(), 11);
         QVERIFY(!backend.notice().isEmpty());
     }
 
