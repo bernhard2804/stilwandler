@@ -1,3 +1,5 @@
+// Language following comes from the Omarchy app template, after Omacut and
+// Monologue (MIT, David Heinemeier Hansson); adds a fallback language.
 #include "translator.h"
 
 #include <QDir>
@@ -23,8 +25,8 @@ Translator::Translator(const QString &languageFile, const QString &catalogDirect
 }
 
 // One registry code on the first line; anything else, or no file, is the
-// fallback. Stilwandler passes German: its user runs Omarchy in English but
-// wants this app in German, and a language picked in Omarchy still wins.
+// fallback. Stilwandler passes German, since its styles are written for
+// German messages; a language picked in Omarchy still wins.
 QString Translator::readLanguage(const QString &path, const QString &fallback) {
     QFile file(path);
     if (!file.open(QIODevice::ReadOnly))

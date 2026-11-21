@@ -24,7 +24,7 @@ Das Ergebnisfeld ist bearbeitbar, vor dem Kopieren lässt sich also noch nachbes
 Gedacht für [Omarchy](https://omarchy.org) (Arch Linux mit Hyprland). Auf anderem Arch Linux mit Wayland läuft es auch, folgt dann aber keinem Theme. Auf Omarchy sind alle Abhängigkeiten schon da; sonst vorher:
 
 ```
-sudo pacman -S --needed base-devel git qt6-base qt6-declarative qt6-wayland qt6-svg libsecret wl-clipboard
+sudo pacman -S --needed base-devel git polkit qt6-base qt6-declarative qt6-wayland qt6-svg libsecret wl-clipboard
 ```
 
 Dann im Terminal:
@@ -35,7 +35,7 @@ cd stilwandler
 bin/install
 ```
 
-`bin/install` baut ein Paket und installiert es (fragt per Dialog nach dem Passwort). Danach steht „Stilwandler“ im App-Starter (Super+Leertaste). Aktualisieren: im Ordner `git pull` und wieder `bin/install`.
+`bin/install` baut ein Paket und installiert es (fragt per Dialog oder im Terminal nach dem Passwort). Danach steht „Stilwandler“ im App-Starter (Super+Leertaste). Aktualisieren: im Ordner `git pull` und wieder `bin/install`.
 
 ## API-Schlüssel
 

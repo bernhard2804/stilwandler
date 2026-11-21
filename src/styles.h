@@ -46,7 +46,7 @@ struct StreamState {
 // Takes the complete events out of buffer and applies them to state.
 void consume(QByteArray &buffer, StreamState &state);
 
-// Long dashes are replaced with a hyphen; the user does not want them in text.
+// Long dashes are replaced with a plain hyphen, which reads better in chats.
 QString tidy(QString text);
 
 }

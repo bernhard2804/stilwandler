@@ -1,3 +1,4 @@
+// After Omacut and Monologue (MIT, David Heinemeier Hansson).
 #pragma once
 
 #include <QFileSystemWatcher>
