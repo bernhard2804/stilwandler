@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Stilwandler
+Comment=Rewrite a message in a funny, exaggerated style
+Comment[de]=Nachrichten lustig und übertrieben umschreiben
+Exec=stilwandler
+Icon=stilwandler
+Terminal=false
+Categories=Utility;
+StartupWMClass=stilwandler

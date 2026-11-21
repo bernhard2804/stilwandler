@@ -1,0 +1,15 @@
+#!/bin/sh
+# Builds the package and installs it through pkexec (graphical prompt),
+# since pacman needs root.
+set -eu
+
+ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+# makepkg builds itself (build() in the PKGBUILD), with its own flags.
+cd "$ROOT/pkgbuild"
+rm -rf "$ROOT/build"
+makepkg -f "$@"
+# The exact file name from makepkg, never a guess by pattern.
+list="$(makepkg --packagelist)"
+pkg="$(printf '%s\n' "$list" | head -n1)"
+[ -f "$pkg" ] || { echo "Package not found: $pkg" >&2; exit 1; }
+exec pkexec pacman -U --noconfirm "$pkg"
